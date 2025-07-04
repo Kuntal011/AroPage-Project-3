@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AroPage - bootstrap-4</title>
+    <link rel="icon" href="./imgs/icons8-a-96.png">
+
+    <!-- cdn for bootstrap-4 and bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- owl slider -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header id="head">
+        <div class="container">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <!-- nav-logo -->
+                <a href="./index.html" class="navbar-brand _logo"><img src="./imgs/logo.png" alt="LOGO"></a>
+
+                <!-- collapse button -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="_navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+
+                <!-- nav menu -->
+                <ul class="collapse navbar-collapse navbar-nav justify-content-center align-items-start" id="navbarNav">
+                    <li class="nav-item _nav-menu-items"><a href="#">Home</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Features</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Faq</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Portfolio</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Pricing</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Service</a></li>
+                    <li class="nav-item _nav-menu-items"><a href="#">Blog</a></li>
+
+                    <li class="nav-item dropdown _nav-menu-items">
+                        <!-- dropdown toggler -->
+                        <a href="#" class="dropdown-toggle" data-target="#dropdownMenuLink"
+                            data-toggle="dropdown">Landing</a>
+                        <!-- dropdown menu -->
+                        <div class="dropdown-menu big-z-index _nav-dropdown-menu" id="dropdownMenuLink">
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Another action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Something else here</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Another action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Something else here</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Another action</a>
+                            <a class="dropdown-item _nav-dropdown-items" href="#">Something else here</a>
+                        </div </li>
+                </ul>
+
+                <!-- nav download button -->
+                <a href="#" class="row align-items-center border-0 rounded-pill d-none d-lg-block _nav-btn"><span><i
+                            class="bi bi-cloud-arrow-down"></i></span>Download</a>
+            </nav>
+        </div>
+    </header>
+    <!--header ends here -->
+
+    <!-- hero section starts here -->
+    <section id="hero" class="overflow-hidden">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-left text-center _hero-content">
+                    <h1>Better design for your digital products.</h1>
+                    <p>
+                        We are a creative studio specializing in UI/UX design,<br>
+                        development and strategy.
+                    </p>
+                    <button>Get Solution<i class="bi bi-arrow-up-right"></i></button>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="./imgs/hero-u1BrDpJJ.png" alt="hero img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section ends here -->
+
+    <!-- Features section starts here -->
+    <section id="features" class="overflow-hidden">
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+            <!-- features main heading -->
+            <div class="col-12 text-center _features-heading">
+                <span>Features Services</span>
+                <h2>Features</h2>
+            </div>
+            <!-- features cards -->
+            <div class="row">
+                <div class="col-lg-4 d-flex flex-column  _feature-card">
+                    <i class="bi bi-database-fill-check"></i>
+                    <h3>Developer</h3>
+                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this
+                        design</p>
+                    <a href="">Read More<span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+
+                <div class="col-lg-4 d-flex flex-column _feature-card">
+                    <i class="bi bi-grid-fill"></i>
+                    <h3>Digital Product Design</h3>
+                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this
+                        design</p>
+                    <a href="">Read More<span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+
+                <div class="col-lg-4 d-flex flex-column _feature-card">
+                    <i class="bi bi-stack"></i>
+                    <h3>Branding & Design</h3>
+                    <p>Lorem ipsum dummy text are usually use in these section. Lorem ipsum dummy text are used in this
+                        design</p>
+                    <a href="">Read More<span><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature section ends here  -->
+
+    <!-- faq section starts here  -->
+    <section id="faq">
+        <div class="container">
+            <!-- faq main heading -->
+            <div class="text-center _faq-heading">
+                <span>Our FAQ</span>
+                <h2>Frequently Asked Questions ?</h2>
+            </div>
+            <div class="row overflow-hidden">
+                <!-- faq side img -->
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="2000">
+                    <img src="./imgs/4-RkTMV7PL.svg" alt="faq-img" class="img-fluid">
+                </div>
+
+                <!-- faq question list -->
+                <div class="col-lg-6 _faq-list" id="accordion" data-aos="fade-up" data-aos-duration="1500">
+
+                    <div class="_faq-question">
+                        <!-- question head -->
+                        <div class="_faq-question-head" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true">
+                            <div>How Can Digital Marketing Benefit My Business?</div>
+                        </div>
+                        <!-- question body -->
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="_faq-question-body">
+                                It can increase brand visibility, drive website traffic, generate leads, and ultimately
+                                boost sales and revenue.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="_faq-question">
+                        <div class="_faq-question-head" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true">
+                            <div>Do I Need To Have A Large Budget For Digital Marketing?</div>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="_faq-question-body">
+                                We work with businesses of various budgets and can create strategies that align with
+                                your financial resources while delivering meaningful results.
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="_faq-question">
+                        <div class="_faq-question-head" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="true">
+                            <div>What Services Does [Your Digital Agency] Offer?</div>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="_faq-question-body">
+                                provides a comprehensive range of digital services, including website design and
+                                development, digital marketing, search engine optimization
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="_faq-question">
+                        <div class="_faq-question-head" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="true">
+                            <div>Can Help With Content Creation And Social Media Management?</div>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                            <div class="_faq-question-body">
+                                Absolutely! We offer content creation services, including blog posts, social media
+                                content, and multimedia assets.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq section ends here -->
+
+    <!--Portfolio section starts here -->
+    <section id="portfolio" class="overflow-hidden">
+        <div class="container-fluid" data-aos="fade-up" data-aos-duration="1500">
+            <div class="text-center _portfolio-heading">
+                <span>Our Portfolio</span>
+                <h2>Selected Projects.</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 owl-carousel owl-theme">
+                    <div class="item _portfolio-slider">
+                        <img src="./imgs/img1.jpg" alt="faq-img">
+
+                        <div class="_slider-text">
+                            <h2>Web Designing</h2>
+                            <h2>Branding Process</h2>
+                        </div>
+                    </div>
+                    <div class="item _portfolio-slider">
+                        <img src="./imgs/img2.jpg" alt="faq-img">
+
+                        <div class="_slider-text">
+                            <h2>Web Designing</h2>
+                            <h2>Branding Process</h2>
+                        </div>
+                    </div>
+                    <div class="item _portfolio-slider">
+                        <img src="./imgs/img3.jpg" alt="faq-img">
+
+                        <div class="_slider-text">
+                            <h2>Web Designing</h2>
+                            <h2>Branding Process</h2>
+                        </div>
+                    </div>
+                    <div class="item _portfolio-slider">
+                        <img src="./imgs/img4.webp" alt="faq-img">
+
+                        <div class="_slider-text">
+                            <h2>Web Designing</h2>
+                            <h2>Branding Process</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- pricing section starts here -->
+    <section id="pricing">
+        <div class="container">
+            <div class="row align-items-center overflow-hidden">
+                <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1500">
+                    <div>
+                        <div class="_pricing-heading">
+                            <span>Pricing</span>
+                            <h2>Affordable Pricing.<br>Easy scaling.</h2>
+                        </div>
+                    </div>
+                    <div class="_pricing-content">
+                        <p>Things go wrong have questions. We've understand. So we have people</p>
+                        <ul class="_pricing-content-features">
+                            <li class="d-flex">
+                                <div><i class="bi bi-arrow-right"></i></div>
+                                <p>Amazing communication.</p>
+                            </li>
+                            <li class="d-flex">
+                                <div><i class="bi bi-arrow-right"></i></div>
+                                <p>Best trendinf designing experience.</p>
+                            </li>
+                            <li class="d-flex">
+                                <div><i class="bi bi-arrow-right"></i></div>
+                                <p>Email & Live chat.</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="d-flex flex-wrap _pricing-card-list">
+                        <div class="col-md d-flex flex-column _pricing-card">
+                            <h3>advanced</h3>
+                            <div><sup>&dollar;</sup>24<span> /month</span></div>
+                            <p>14 days free</p>
+                            <ul>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Guaranteed quality control</p>
+                                </li>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Top quality service</p>
+                                </li>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Best experts at your lease</p>
+                                </li>
+                            </ul>
+                            <button><a href="">Sign up</a></button>
+
+                        </div>
+                        <div class="col-md d-flex flex-column _pricing-card">
+                            <h3>enterprise</h3>
+                            <div><sup>&dollar;</sup>87<span> /month</span></div>
+                            <p>14 days free</p>
+                            <ul>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Guaranteed quality control</p>
+                                </li>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Top quality service</p>
+                                </li>
+                                <li class="d-flex">
+                                    <span><i class="bi bi-circle-fill"></i></span>
+                                    <p>Best experts at your lease</p>
+                                </li>
+                            </ul>
+                            <button><a href="">Sign up</a></button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section ends here -->
+
+    <!-- services section starts here -->
+    <section id="services">
+        <div class="container">
+            <div class="row align-items-center _service-content overflow-hidden">
+                <div class="col-lg _services-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="_services-heading">
+                        <span>Services</span>
+                        <p>We help you to go online and increase your conversion rate Better design for your digital
+                            products.
+                        </p>
+
+                    </div>
+                    <div class="d-flex flex-column _service-list">
+                        <div class="d-flex align-items-center justify-content-between _service-name">
+                            <h3 class="m-0">Graphic Design</h3><span>></span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between _service-name">
+                            <h3 class="m-0">Web Design</h3><span>></span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between _service-name">
+                            <h3 class="m-0">Digital Marketing</h3><span>></span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between _service-name">
+                            <h3 class="m-0">UI/UX Design</h3><span>></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg _service-side-img" data-aos="fade-down" data-aos-duration="1500">
+                    <img src="./imgs/hero-u1BrDpJJ.png" alt="service-side-img" class="img-fluid">
+
+                    <div class="d-flex flex-column _service-side-text">
+                        <h3>Development</h3>
+                        <p>Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed augue ipsum, egestas
+                            nec, vestibulum et, malesuada adipiscing, dui.</p>
+                        <a href="" class="d-flex align-items-center">Read More<span><i class="bi bi-arrow-right"></i>
+                            </span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section ends here -->
+
+    <!--course slider section starts here -->
+    <section id="course-slider" class="overflow-hidden">
+        <div class="" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-12 owl-carousel owl-theme">
+                <div class="item _course-slider-text">
+                    <h2>Web Development</h2>
+                </div>
+                <div class="item _course-slider-text">
+                    <h2>Digital Marketing</h2>
+                </div>
+                <div class="item _course-slider-text">
+                    <h2>Product Design</h2>
+                </div>
+                <div class="item _course-slider-text">
+                    <h2>UI-UX Experience</h2>
+                </div>
+                <div class="item _course-slider-text">
+                    <h2>Mobile Solutions</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--course slider section ends here -->
+
+    <!-- Since From section starts here -->
+    <section id="since-from" class="overflow-hidden">
+        <div class="container" data-aos="fade-down" data-aos-duration="1500">
+            <div class="row">
+                <div class="col-lg-6 _since-from-content">
+                    <div class="_since-from-heading">
+                        <span>Since From</span>
+                        <h2>Keep pushing forward. We've got your back.</h2>
+                        <p>Thing go wrong have questions. We've understand. So we have people</p>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap _achivement">
+                        <div class="d-flex align-items-center _user">
+                            <span><strong>10k</strong></span>
+                            <p class="mb-0">Happy Users <br>Around World</p>
+                        </div>
+                        <div class="d-flex align-items-center _project">
+                            <span><strong>120k</strong></span>
+                            <p class="mb-0">Projects <br>Already Done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div id="testimonial-slider" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex flex-column _person">
+                                    <div class="d-flex align-items-center _person-name-img">
+                                        <div class="_person-img"><img src="./imgs/img-1-t.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <h3>Leonard Heiser</h3>
+                                    </div>
+                                    <p class="m-0">I have been hiring people in this space for and numbers of years and
+                                        I
+                                        have to be never seen this level of professionalism.</p>
+                                    <ul class="d-flex _rating">
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex flex-column _person">
+                                    <div class="d-flex align-items-center _person-name-img">
+                                        <div class="_person-img"><img src="./imgs/img-2-t.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <h3>Leonard Heiser</h3>
+                                    </div>
+                                    <p class="m-0">I have been hiring people in this space for and numbers of years and
+                                        I
+                                        have to be never seen this level of professionalism.</p>
+                                    <ul class="d-flex _rating">
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex flex-column _person">
+                                    <div class="d-flex align-items-center _person-name-img">
+                                        <div class="_person-img"><img src="./imgs/img-3-t.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <h3>Leonard Heiser</h3>
+                                    </div>
+                                    <p class="m-0">I have been hiring people in this space for and numbers of years and
+                                        I
+                                        have to be never seen this level of professionalism.</p>
+                                    <ul class="d-flex _rating">
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex flex-column _person">
+                                    <div class="d-flex align-items-center _person-name-img">
+                                        <div class="_person-img"><img src="./imgs/img-4-t.jpg" alt="img"
+                                                class="img-fluid">
+                                        </div>
+                                        <h3>Leonard Heiser</h3>
+                                    </div>
+                                    <p class="m-0">I have been hiring people in this space for and numbers of years and
+                                        I
+                                        have to be never seen this level of professionalism.</p>
+                                    <ul class="d-flex _rating">
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                        <li><i class="bi bi-star"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- since from section ends here -->
+
+    <!-- blog section starts here -->
+    <section id="blog">
+        <div class="container">
+            <div class="text-center _blog-heading">
+                <span>Our Blog</span>
+                <h2>Read the latest news.</h2>
+            </div>
+            <div class="row justify-content-between _blog-list overflow-hidden">
+                <div class="col-lg-4 my-3" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="d-flex flex-column _blog-item">
+                        <div>
+                            <img src="./imgs/img1.jpg" alt="blog-1" class="img-fluid _blog-img">
+                        </div>
+                        <div class="_blog-content">
+                            <h3>Free advertising you online business.</h3>
+                            <p>Content king that means bringing and strategic approach.</p>
+                            <a href="" class="d-flex align-items-center">Read More<span><i
+                                        class="bi bi-arrow-right"></i>
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="d-flex flex-column _blog-item">
+                        <div>
+                            <img src="./imgs/img2.jpg" alt="blog-1" class="img-fluid _blog-img">
+                        </div>
+                        <div class="_blog-content">
+                            <h3>Investment monitor top 2023</h3>
+                            <p>We are thrilled to the Investment Top 2023, recognizing the excellence and innovation.
+                            </p>
+                            <a href="" class="d-flex align-items-center">Read More<span><i
+                                        class="bi bi-arrow-right"></i>
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="d-flex flex-column _blog-item">
+                        <div>
+                            <img src="./imgs/img3.jpg" alt="blog-1" class="img-fluid _blog-img">
+                        </div>
+                        <div class="_blog-content">
+                            <h3>Advancing Innovation and Collaboration</h3>
+                            <p>Join us for a transformative event focused on Advancing Innovation and Collaboration.</p>
+                            <a href="" class="d-flex align-items-center">Read More<span><i
+                                        class="bi bi-arrow-right"></i>
+                                </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section starts here -->
+    <!-- footer section starts here -->
+    <footer id="footer">
+        <hr>
+        <section id="contact" class="overflow-hidden">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="_footer-heading">
+                            <div class="_footer-img">
+                                <img src="./imgs/logo.png" alt="footer img" class="img-fluid">
+                            </div>
+                            <p>Integer auctor aliquet martor, sed lorem malesuada eros blandit eget. Proin lacinia
+                                mortoc id odio vestibulum.</p>
+                            <label for="footer-input" class="d-flex align-items-center justify-content-between _input">
+                                <input type="text" id="footer-input" placeholder="Enter Your Email" required>
+                                <a href="#"><i class="bi bi-arrow-right"></i></a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg _links">
+                                <h3>Compamy</h3>
+                                <ul class="d-flex flex-column">
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li><a href="">Portfolio</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg _media">
+                                <h3>Social Media</h3>
+                                <ul class="d-flex flex-column">
+                                    <li class="d-flex align-items-center"><i class="bi bi-facebook"></i><a
+                                            href="">Facebook</a></li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-instagram"></i><a
+                                            href="">Instagram</a></li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-twitter"></i><a
+                                            href="">Twitter</a></li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-linkedin"></i><a
+                                            href="">Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg _links">
+                                <h3>Legal & Press</h3>
+                                <ul class="d-flex flex-column">
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                    <li><a href="">Presskit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">Made by <span class="text-danger">Bootstrap</span></p>
+            </div>
+        </section>
+        <hr>
+    </footer>
+
+
+    <!--scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

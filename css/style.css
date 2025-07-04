@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: "REM", sans-serif !important;
+}
+
+:root {
+    --color-1: #ea580c;
+    --color-2: #ea580c1a;
+    --color-3: #000;
+    --color-4: #fff;
+    --color-5: #52525b;
+}
+/* js classes */
+header.scroll{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+/* header starts here */
+header {
+    backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.8);
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+
+}
+
+._logo {
+    width: 160px;
+    height: auto;
+}
+
+._logo img {
+    width: 100%;
+    height: auto;
+}
+
+._nav-menu-items {
+    margin: 0 0.8rem;
+    font-weight: 450;
+    font-size: 1rem;
+}
+@media screen and (width<=991px){
+    ._nav-menu-items{
+        border-bottom: 1px solid grey;
+        width: 100%;
+        padding:0.5rem 1.5rem;
+    }
+    
+}
+._nav-menu-items a {
+    color: var(--color-3);
+}
+
+._nav-menu-items a:hover {
+    color: var(--color-1);
+}
+
+._nav-btn {
+    background-color: var(--color-1);
+    padding: 0.2rem 1.5rem;
+    color: var(--color-4);
+    font-weight: 500;
+    text-align: center;
+}
+._nav-btn:hover {
+    color: var(--color-4);
+}
+._nav-btn span i {
+    font-size: 1.05rem;
+    margin-right: 0.4rem;
+    color: var(--color-4);
+
+}
+
+._nav-dropdown-menu {
+    top: 2.5rem;
+    position: absolute !important;
+    z-index: 100 !important;
+}
+
+._nav-dropdown-items:hover {
+    color: var(--color-1);
+}
+
+._nav-dropdown-items:active {
+    background: none;
+}
+._navbar-toggler-icon{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem !important;
+}
+/* header section ends here */
+
+/* hero section starts here */
+#hero {
+    padding: 3rem 0;
+    background-image:
+        repeating-linear-gradient(to right,
+            rgba(128, 128, 128, 0.05) 0,
+            rgba(128, 128, 128, 0.05) 1px,
+            transparent 1px,
+            transparent 50px),
+        repeating-linear-gradient(to bottom,
+            rgba(128, 128, 128, 0.05) 0,
+            rgba(128, 128, 128, 0.05) 1px,
+            transparent 1px,
+            transparent 50px);
+}
+
+._hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+
+}
+
+._hero-content p {
+    color: var(--color-5);
+}
+
+._hero-content button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--color-1);
+    background-color: var(--color-2);
+    font-size: 1rem;
+    color: var(--color-1);
+    font-weight: 400;
+    border-radius: 0.3rem;
+    transition: all 0.4s;
+}
+
+._hero-content button:hover {
+    color: var(--color-4);
+    background-color: var(--color-1);
+}
+
+._hero-content button i {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-left: 0.3rem;
+}
+
+/* hero section ends here */
+
+/* Features section starts here */
+#features {
+    padding: 3rem 0;
+}
+
+._features-heading {
+    padding: 2rem 0 4rem;
+}
+
+._features-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+
+}
+
+._features-heading h2 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+}
+
+._feature-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    padding: 2rem;
+}
+
+._feature-card i {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+._feature-card h3 {
+    font-size: 1.5rem;
+}
+
+._feature-card p {
+    color: var(--color-5);
+}
+
+._feature-card a {
+    color: var(--color-3);
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+._feature-card a span i {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+
+._feature-card a span {
+    visibility: hidden;
+}
+
+._feature-card:hover a span {
+    animation: arrow 1s forwards;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0%;
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 90%;
+        transform: translateX(8px);
+        visibility: visible;
+
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(8px);
+        visibility: visible;
+    }
+}
+
+/* feature section ends here */
+
+/* faq section starts here */
+#faq {
+    padding: 3rem 0;
+
+}
+
+._faq-heading {
+    padding: 2rem 0 4rem;
+}
+
+._faq-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+
+}
+
+._faq-heading h2 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+
+}
+
+._faq-question {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+._faq-question-head div {
+    padding: 1rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--color-3);
+}
+
+._faq-question-body {
+    padding: 0rem 1.4rem 1rem;
+    font-size: 0.9rem;
+    color: var(--color-5);
+}
+
+/* faq section ends here */
+
+/* portfolio section starts here */
+#portfolio {
+    padding: 3rem 0;
+
+}
+
+._portfolio-heading {
+    padding: 2rem 0 4rem;
+
+}
+
+._portfolio-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+}
+
+._portfolio-heading h2 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+}
+
+._portfolio-slider {
+    height: 25rem;
+    position: relative;
+    transition: all 1s;
+}
+
+._portfolio-slider img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+}
+
+._slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+._slider-text h2 {
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.1rem;
+    visibility: hidden;
+}
+
+._portfolio-slider:hover ._slider-text h2 {
+    visibility: visible;
+    animation: slider-text 0.3s forwards;
+}
+
+@keyframes slider-text {
+    0% {
+        visibility: visible;
+        opacity: 0%;
+
+    }
+
+    25% {
+        visibility: visible;
+        opacity: 25%;
+
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 50%;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 100%;
+    }
+
+}
+
+/* portfolio section ends here */
+
+/* pricing section starts here */
+#pricing {
+    padding: 3rem 0;
+
+}
+
+._pricing-heading {
+    padding: 0 0 2rem;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.4);
+
+}
+
+._pricing-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+
+}
+
+._pricing-heading h2 {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+
+}
+
+._pricing-content {
+    margin-top: 1rem;
+}
+
+._pricing-content p {
+    color: var(--color-5);
+}
+
+._pricing-content-features i {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    color: var(--color-1);
+}
+
+._pricing-content-features li p {
+    color: var(--color-3);
+}
+
+._pricing-card-list {
+    gap: 2rem;
+}
+
+._pricing-card {
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.7rem 2rem;
+    gap: 0.5rem;
+}
+
+._pricing-card h3 {
+    color: var(--color-1);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+._pricing-card div {
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
+._pricing-card div span {
+    font-size: 1rem;
+}
+
+._pricing-card p {
+    color: var(--color-5);
+}
+
+._pricing-card ul i {
+    font-size: 0.4rem;
+    margin-right: 1rem;
+    color: var(--color-1);
+}
+
+._pricing-card ul li p {
+    color: var(--color-3);
+}
+
+._pricing-card button {
+    width: 40%;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-1);
+    background-color: var(--color-2);
+    padding: 0.5rem 0.9rem;
+    transition: all 0.5s;
+
+}
+
+._pricing-card button a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-1);
+}
+
+._pricing-card button:hover {
+    background-color: var(--color-1);
+}
+
+._pricing-card button:hover a {
+    color: var(--color-4);
+}
+
+/* pricing section ends here */
+
+/* services section starts here */
+#services {
+    padding: 3rem 0;
+}
+
+._service-content {
+    gap: 5rem;
+}
+
+._services-heading {
+    padding: 0 0 2rem;
+
+}
+
+._services-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+
+}
+
+._services-heading p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-3);
+}
+
+._service-list {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 0.5rem;
+}
+
+._service-name {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 1.2rem;
+}
+
+._service-name h3 {
+    font-size: 1.5rem;
+}
+
+._service-name span {
+    margin: 0 !important;
+    padding: 0.3rem 1.1rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    transition: all 0.4s;
+}
+
+._service-name:hover span {
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+._service-side-img {
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    align-self: stretch;
+    border-radius: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.02);
+}
+
+._service-side-text {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: -12%;
+    z-index: 10;
+    background-color: #f4f4f5;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    gap: 0.6rem;
+}
+
+._service-side-text p {
+    color: var(--color-5);
+}
+
+._service-side-text h3 {
+    font-size: 1.6rem;
+}
+
+._service-side-text a {
+    color: var(--color-3);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+._service-side-text a span i {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+
+}
+
+._service-side-text a span {
+    visibility: hidden;
+}
+
+._service-side-text:hover span {
+    animation: arrow 1s forwards;
+}
+@media only screen and (width<1000px) {
+    ._service-side-text{
+        position: static;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    
+}
+
+/* course slider section starts here */
+#course-slider {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+._course-slider-text h2 {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+/* since from section starts here */
+._since-from-content {
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+._since-from-heading span {
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+}
+
+._since-from-heading h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+
+._since-from-heading p {
+    color: var(--color-5);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+._achivement {
+    padding: 1rem 0;
+}
+
+._user strong {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+
+._user p {
+    color: var(--color-5);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+._project strong {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-right: 1rem;
+}
+
+._project p {
+    color: var(--color-5);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* testimonial slider section starts  */
+._person {
+    padding: 2rem 2rem 1rem;
+    background-color: rgba(244, 244, 245, 0.7);
+    gap: 1.6rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 1rem;
+}
+
+._person-name-img h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+
+}
+
+._person-img {
+    height: 60px;
+    width: 60px;
+}
+
+._person-img img {
+    border-radius: 50%;
+    border: 3px solid rgb(184, 182, 182);
+}
+
+._person p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--color-5);
+}
+
+._rating {
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    color: gold;
+}
+
+#testimonial-slider {
+    width: 100%;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+/* testimonial section ends here */
+
+/* blog section starts here */
+#blog{
+    padding: 3rem 0;
+}
+._blog-heading {
+    padding: 2rem 0 4rem;
+}
+._blog-heading span{
+    padding: 0.3rem 0.9rem;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--color-1);
+    border-radius: 0.4rem;
+
+}
+._blog-heading h2{
+    margin-top: 1rem;
+    font-size: 2.3rem;
+}
+._blog-item{
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    height: 100%;
+    gap: 1.5rem;
+    border-radius: 0.6rem;
+}
+._blog-img{
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+._blog-content{
+    padding: 1.5rem;
+}
+._blog-content a{
+    color: var(--color-3);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+._blog-content a span i {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+._blog-content a span {
+    visibility: hidden;
+}
+
+._blog-item:hover ._blog-content span {
+    animation: arrow 1s forwards;
+}
+/* blog section ends here */
+
+/* footer section starts here */
+#contact{
+    padding: 2rem 0 4rem;
+}
+._footer-img{
+    width: 140px;
+}
+._footer-heading p{
+    color: var(--color-3);
+    margin: 1.5rem 0;
+}
+._input{
+    border:  1px solid rgba(128, 128, 128, 0.2);
+    width: 90%;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 2rem;
+}
+._input input{
+    height: 100%;
+    width: 85%;
+    border: none;
+    padding: 0.4rem 0.2rem;
+    font-size: 1.1rem;
+    background-color:transparent;
+}
+._input input:focus{
+    outline:none;
+}
+._input a{
+    width: 15%;
+    background-color:rgba(234, 88, 12,0.3);
+    padding: 0.4rem 1.3rem;
+    border-radius: 0.4rem;
+    transition: all 0.4s;
+}
+._input a i{
+    color: var(--color-1);
+    font-size: 1.1rem;
+}
+._input a:hover{
+    background-color: var(--color-1);
+}
+._input a:hover i{
+    color: var(--color-4);
+}
+._links h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+._links ul{
+    gap: 0.3rem;
+}
+._links ul li{
+    cursor: pointer;
+}
+._links ul li a{
+    color: var(--color-5);
+    transition: all 0.3s;
+
+}
+._links ul li:hover a{
+    color: var(--color-3);
+}
+._media h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+._media ul{
+    gap: 1.3rem;
+}
+._media ul li i{
+    transition: all 0.4s;
+    font-size: 1.2rem;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+._media ul li a{
+    color: var(--color-3);
+}
+._media ul li:hover i{
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+/* footer section end here */
